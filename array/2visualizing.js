@@ -7,3 +7,4 @@ console.log(nums[4]);
 console.log(nums[9]);
 console.log(typeof nums);
 
+

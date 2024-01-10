@@ -10,3 +10,4 @@ console.log(name);
 console.log(info);
 console.log("Empty Array",newArr);
 console.log(marks,name,info);
+console.log(info[0].length);
