@@ -1,5 +1,6 @@
-let n=prompt("Write your number");
-n=parseInt(n);
-for(let i=n; i<=n*10; i=i+n){
-    console.log(i);
+const favMovie="Avtar";
+let guess=prompt(`guess my favMovie`);
+while((guess!=favMovie)&&(guess!='quit')){
+    console.log("wrong guess");
+    guess=prompt("");
 }
