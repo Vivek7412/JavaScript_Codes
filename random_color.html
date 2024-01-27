@@ -13,7 +13,29 @@
 
     <div style="height: 100px; width: 600px; border: 1px solid black; margin: auto;">This is your new color</div>
      <br>
-    <script src="color.js"></script>
+    <script>
+        let btn= document.querySelector("button");
+let h1= document.querySelector("h1");
+btn.addEventListener("click",function(){
+    let h1=document.querySelector("h1");
+    let randomcolor=getRandomclor();
+    h1.innerText=randomcolor;
+
+    let div =document.querySelector("div");
+    div.style.backgroundColor=randomcolor;
+
+    console.log("color updated")
+});
+
+function getRandomclor(){
+    let red=Math.floor(Math.random()*255);
+    let green=Math.floor(Math.random()*255);
+    let blue=Math.floor(Math.random()*255);
+
+    let color=`rgb(${red},${green},${blue})`;
+    return color;
+};  
+    </script>
 </body>
 
 </html>
